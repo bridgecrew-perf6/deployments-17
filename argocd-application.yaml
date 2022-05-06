@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: dev
   destination:
-    server: https://3479ca39-169f-4004-a296-7a3fb2d0289b.cpc1-us-central.linodelke.net:443
+    server: https://kubernetes.default.svc
     namespace: myvueapp
 
   syncPolicy:
