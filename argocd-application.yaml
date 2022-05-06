@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:mercybassey/deployments.git
+    repoURL: https://github.com/mercybassey/deployments
     targetRevision: HEAD
     path: dev
   destination:
