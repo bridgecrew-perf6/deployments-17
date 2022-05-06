@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/mercybassey/deployments
+    repoURL: git@github.com:mercybassey/deployments.git
     targetRevision: HEAD
     path: dev
   destination:
@@ -16,3 +16,7 @@ spec:
   syncPolicy:
     syncOptions:
     - CreateNameSpace=true
+
+    automated:
+      selfHeal: true
+      prune: true
