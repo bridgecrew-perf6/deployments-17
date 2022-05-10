@@ -5,16 +5,19 @@ metadata:
   namespace: argocd
 spec:
   project: default
+
   source:
-    repoURL: https://github.com/mercybassey/deployments
+    repoURL: git@github.com:mercybassey/deployments.git
     targetRevision: HEAD
     path: dev
-  destination:
+  destination: 
     server: https://kubernetes.default.svc
-    namespace: myvueapp
+    namespace: myapp
 
   syncPolicy:
     syncOptions:
-    - CreateNameSpace=true
+    - CreateNamespace=true
 
-  
+    automated:
+      selfHeal: true
+      prune: true
